@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 
 	// integer type - int / int8 / int16 / int32 / int64
@@ -45,4 +47,8 @@ func main() {
 	// 	PI string = "HH"
 	// 	TT int    = 99
 	// )
+
+	// Prints the type of the value
+	var a = "hello"
+	fmt.Printf("%T", a)
 }
