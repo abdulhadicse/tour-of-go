@@ -8,10 +8,27 @@ func main() {
 	// age, name := addition(200, 400)
 
 	//omit the value
-	age, _ := addition(200, 400)
-
-	fmt.Println("my age", age)
+	// age, _ := addition(200, 400)
+	// fmt.Println("my age", age)
 	// fmt.Println("my name", name)
+
+	//Pass by values
+	// value := 30
+	// passByvalue(value)
+	// fmt.Println(value)
+
+	// Pass by references
+	// value := 34
+	// passByreference(&value)
+	// fmt.Println(value)
+}
+
+func passByreference(y *int) {
+	*y = 20
+}
+
+func passByvalue(x int) {
+	x = 20
 }
 
 func printHello() {
